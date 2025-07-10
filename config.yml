@@ -183,9 +183,9 @@ messages:
   #   {cpu} to insert CPU information
   #   {ram} to insert RAM size
   # Any other words in curly braces will be removed.
-  greeting: "Ку бест! Меня создал @ChessClassic_555 ) Введи !help для получения списка команд. Приятной игры)" # Message sent to the opponent at the beginning of a game.
-  goodbye: "Гг Бест!"                                             # Message sent to the opponent after the end of a game.
-  greeting_spectators: "Ку бест! Меня создал @ChessClassic_555 ) Введи !help для получения списка команд. Приятного просмотра)" # Message sent to the spectators at the beginning of a game.
+  greeting: "Ку Бест! Я юзаю 2 дебютные книги, Stockfish-dev и трёхфигурные-пятифигурные syzygy. Посмотрим что получится, удачи)" # Message sent to the opponent at the beginning of a game.
+  goodbye: "Гг! Пойду работать над ошибками..."                                             # Message sent to the opponent after the end of a game.
+  greeting_spectators: "Ку Бест! Я юзаю 2 дебютные книги, Stockfish-dev и трёхфигурные-пятифигурные syzygy на BotLi. !help = список команд :)" # Message sent to the spectators at the beginning of a game.
   goodbye_spectators: "Спс за просмотр!)"                                           # Message sent to the spectators after the end of a game.
 
 # whitelist:                              # List of users whose challenges are always accepted.
