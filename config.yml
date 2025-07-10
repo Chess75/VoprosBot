@@ -77,40 +77,40 @@ opening_books:
 
 online_moves:
   opening_explorer:
-    enabled: false                        # Activate online moves from Lichess opening explorer. The move that has performed best for this bot is played.
+    enabled: true                        # Activate online moves from Lichess opening explorer. The move that has performed best for this bot is played.
     priority: 300                         # Priority with which this move source is used. Higher priority is used first.
     only_without_book: false              # Whether the Lichess opening explorer should only be used if there is no matching book.
     use_for_variants: false               # Whether the Lichess opening explorer should be used for other variants than standard and chess960.
-    min_time: 10                          # Time the bot must have at least to use the online move. +10 seconds in games without increment.
+    min_time: 20                          # Time the bot must have at least to use the online move. +10 seconds in games without increment.
     timeout: 5                            # Time the server has to respond.
-    min_games: 5                          # Minimum number of games in which the position must have occurred.
-    only_with_wins: false                 # Whether to play only moves that have won before.
+    min_games: 10                          # Minimum number of games in which the position must have occurred.
+    only_with_wins: true                 # Whether to play only moves that have won before.
     selection: "performance"              # Move selection is "performance" or "win_rate".
     anti: false                           # Whether to play the moves in which the opponent performs the worst.
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from Lichess opening explorer. (Comment this line for max moves)
   lichess_cloud:
-    enabled: false                        # Activate online moves from Lichess cloud eval.
+    enabled: true                        # Activate online moves from Lichess cloud eval.
     priority: 200                         # Priority with which this move source is used. Higher priority is used first.
-    only_without_book: false              # Whether the cloud should only be used if there is no matching book.
+    only_without_book: true              # Whether the cloud should only be used if there is no matching book.
     min_eval_depth: 10                    # Minimum evaluation depth.
     min_time: 10                          # Time the bot must have at least to use the online move. +10 seconds in games without increment.
     timeout: 5                            # Time the server has to respond.
 #   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from Lichess cloud eval. (Comment this line for max moves)
   chessdb:
-    enabled: false                        # Activate online moves from https://chessdb.cn/queryc_en/
+    enabled: true                        # Activate online moves from https://chessdb.cn/queryc_en/
     priority: 100                         # Priority with which this move source is used. Higher priority is used first.
     only_without_book: false              # Whether the chessdb should only be used if there is no matching book.
-    min_candidates: 1                     # Minimum number of candidate moves.
-    min_time: 10                          # Time the bot must have at least to use the online move. +10 seconds in games without increment.
+    min_candidates: 5                     # Minimum number of candidate moves.
+    min_time: 20                          # Time the bot must have at least to use the online move. +10 seconds in games without increment.
     timeout: 5                            # Time the server has to respond.
     selection: "best"                     # Move selection is one of "optimal", "best" or "good".
-#   max_depth: 16                         # Half move max depth. (Comment this line for max depth)
+    max_depth: 30                         # Half move max depth. (Comment this line for max depth)
 #   max_moves: 1                          # Max number of moves played from chessdb. (Comment this line for max moves)
   online_egtb:
-    enabled: false                        # Activate online endgame tablebases from Lichess.
-    min_time: 5                           # Time the bot must have at least to use the online move. +10 seconds in games without increment.
+    enabled: true                        # Activate online endgame tablebases from Lichess.
+    min_time: 20                           # Time the bot must have at least to use the online move. +10 seconds in games without increment.
     timeout: 3                            # Time the server has to respond.
 
 offer_draw:
