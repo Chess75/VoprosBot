@@ -34,7 +34,7 @@ jobs:
           sed -i "s/^token:.*/token: \"${TOKEN}\"/" config.yml
 
       - name: Сделать движок исполняемым
-        run: chmod +x ./engines/stockfish
+        run: chmod +x ./engines/stockfish_dev
 
       - name: Запустить бота
         run: python user_interface.py
