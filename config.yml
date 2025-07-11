@@ -30,8 +30,8 @@ syzygy:
     enabled: true                        # Activate local syzygy endgame tablebases.
     paths:                                # Paths to local syzygy endgame tablebases.
       - "engines/syzygy"
-    max_pieces: 7                         # Count of max pieces in the local syzygy endgame tablebases.
-    instant_play: true                    # Whether the bot should play directly from syzygy without engine if possible.
+    max_pieces: 5                         # Count of max pieces in the local syzygy endgame tablebases.
+    instant_play: false                    # Whether the bot should play directly from syzygy without engine if possible.
   antichess:
     enabled: false                        # Activate local syzygy endgame tablebases.
     paths:                                # Paths to local syzygy endgame tablebases.
@@ -65,7 +65,7 @@ opening_books:
 #     names:                              # List of names of books to use as black.
 #       - BlackBook
     standard:
-      selection: weighted_random          # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+      selection: best_move         # Move selection is one of "weighted_random", "uniform_random" or "best_move".
 #     max_depth: 16                       # Half move max depth. (Comment this line for max depth)
       names:                              # List of names of books to use if there is no specific book for the time control, white, black or chess960.
         - DefaultBook
@@ -199,5 +199,7 @@ messages:
 
 books:
   DefaultBook: "./engines/Book2.bin"
+  BackupBook: "./engines/Book3.bin"
+  Third: "./engines/book.bin"
   BackupBook: "./engines/Book3.bin"
   Third: "./engines/book.bin"
