@@ -111,7 +111,7 @@ online_moves:
   online_egtb:
     enabled: true                        # Activate online endgame tablebases from Lichess.
     min_time: 1                           # Time the bot must have at least to use the online move. +10 seconds in games without increment.
-    timeout: 3                            # Time the server has to respond.
+    timeout: 2                            # Time the server has to respond.
 
 offer_draw:
   enabled: false                           # Activate whether the bot should offer draw.
